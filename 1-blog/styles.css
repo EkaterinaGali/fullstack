@@ -1,0 +1,111 @@
+h1,
+article,
+p,
+a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0 0 30px 0;
+}
+
+nav ul {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 0 0 69px 0;
+}
+
+section {
+  margin: 0 0 103px 0;
+}
+footer {
+  margin: 0 0 77px 0;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.6;
+}
+
+#search {
+  background-color: rgb(31, 41, 55, 0.6);
+  border: 1px solid rgb(31, 41, 55, 0.6);
+  border-radius: 100px;
+  padding: 9px 128px 12px 49px;
+  color: white;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #4b5563;
+  border-radius: 3px;
+  background: #4b5563;
+  padding: 6px 12px;
+}
+
+.blog {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  margin: 0 0 14px 0;
+  opacity: 0.6;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.developer {
+  margin: 0 0 28px 0;
+}
+
+.prof {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+.screen {
+  margin: 0 0 69px 0;
+}
+
+.artOne {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.artTwo {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
