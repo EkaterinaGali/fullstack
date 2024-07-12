@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  margin: unset;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 71px 180px 69px;
+}
+
+nav {
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  margin: 0 auto 77px;
+}
+
+footer p {
+  line-height: 28px;
+  opacity: 0.6;
+  text-align: center;
+}
+
+form {
+  position: relative;
+}
+
+#search {
+  background-color: rgb(31, 41, 55, 0.6);
+  border: 1px solid rgb(31, 41, 55, 0.6);
+  border-radius: 100px;
+  padding: 9px 128px 12px 49px;
+  color: white;
+  width: 224px;
+  height: 44px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  gap: 39px;
+  line-height: 18.75px;
+  list-style: none;
+  margin-left: 77px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #4b5563;
+  border-radius: 3px;
+  background: #4b5563;
+  padding: 6px 12px;
+  margin-right: 11px;
+}
+.logotype {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog {
+  font-size: 18px;
+}
+
+.date {
+  font-size: 14px;
+  line-height: 16.41px;
+  margin: 0 0 14px 0;
+  opacity: 0.6;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.name {
+  line-height: 28px;
+  margin: 0;
+}
+
+.developer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.prof {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+.screen {
+  margin: 0 auto 69px;
+  width: 896px;
+  height: 594px;
+}
+
+.rectangle {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 100px;
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.6);
+  vertical-align: middle;
+}
+
+.content_block {
+  display: flex;
+  flex-direction: column;
+  max-width: 708px;
+  margin: 0 auto 103px;
+}
+
+.content_block p:first-child {
+  font-size: 20px;
+  line-height: 32px;
+}
