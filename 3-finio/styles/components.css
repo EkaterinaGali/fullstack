@@ -145,6 +145,7 @@
 }
 
 .yellow-fill {
+  margin-left: -18px;
   display: inline-block;
   font-weight: 700;
   font-size: 17px;
@@ -153,6 +154,10 @@
   border-radius: var(--border-8);
   background: var(--color-yellow);
   padding: 8px 16px;
+}
+
+.empty-fill {
+  padding: 8px 0;
 }
 
 .benefit-green-fill {
@@ -172,20 +177,19 @@ span.grow {
   font-weight: 800;
 }
 
-.devider__wrapper {
+/* .devider__wrapper {
   position: relative;
-}
+} */
 
 .white-devider {
-  width: 2332px;
-  height: 312px;
+  width: calc(100% + 2300px);
+  height: calc(50% + 204px);
   background: var(--color-link-hover);
-  /* display: flex; */
   transform: rotate(-7deg);
   position: absolute;
   z-index: 1;
-  top: -219px;
-  left: -28px;
+  top: 59%;
+  left: -50%;
   overflow: hidden;
 }
 

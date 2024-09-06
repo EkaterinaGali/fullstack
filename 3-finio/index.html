@@ -77,33 +77,38 @@
           alt="экран монитора с сайтом Finio"
         />
       </div>
-    </section>
-    <div class="devider__wrapper">
       <div class="white-devider"></div>
-    </div>
+    </section>
+
     <div class="hero__footer">
       <div class="hero__footer_block">
-        <img
-          class="block_icon"
-          src="../3-finio/images/analysis-icon.svg"
-          alt="иконка анализа прибыли"
-        />
+        <div>
+          <img
+            class="block_icon"
+            src="../3-finio/images/analysis-icon.svg"
+            alt="иконка анализа прибыли"
+          />
+        </div>
         <p class="block_text">Анализ прибыли по<br />товарам и брендам</p>
       </div>
       <div class="hero__footer_block">
-        <img
-          class="block_icon"
-          src="../3-finio/images/turnover-icon.svg"
-          alt="иконка доходов"
-        />
+        <div>
+          <img
+            class="block_icon"
+            src="../3-finio/images/turnover-icon.svg"
+            alt="иконка доходов"
+          />
+        </div>
         <p class="block_text">Автоматический учёт<br />доходов Wildberries</p>
       </div>
       <div class="hero__footer_block">
-        <img
-          class="block_icon"
-          src="../3-finio/images/ruble-icon.svg"
-          alt="иконка рубля"
-        />
+        <div>
+          <img
+            class="block_icon"
+            src="../3-finio/images/ruble-icon.svg"
+            alt="иконка рубля"
+          />
+        </div>
         <p class="block_text">
           От 990 рублей в месяц<br />с полным функционалом
         </p>
@@ -132,6 +137,12 @@
         </div>
 
         <div class="card">
+          <div class="card_img">
+            <img
+              src="../3-finio/images/grapf-images/report.png"
+              alt="набор слайдов с изображением графиков и диаграмм"
+            />
+          </div>
           <div class="card_block">
             <h2 class="black-text-40-600">
               Отчёты о прибыли и<br />убытках всегда под рукой
@@ -141,14 +152,8 @@
               все необходимые показатели для принятия правильных решений
             </p>
           </div>
-          <div class="card_img">
-            <img
-              src="../3-finio/images/grapf-images/report.png"
-              alt="набор слайдов с изображением графиков и диаграмм"
-            />
-          </div>
         </div>
-        <!-- <div class="page__devider"></div> -->
+
         <div class="card">
           <div class="card_block">
             <h2 class="black-text-40-600">
@@ -166,26 +171,28 @@
             />
           </div>
         </div>
-        <!-- <div class="page__devider"></div> -->
+
         <div class="card">
-          <div class="card_block">
-            <h2 class="black-text-40-600">Сокращайте лишние<br />расходы</h2>
-            <p class="ghost-text-18">
-              Анализируйте расходы, убирать ненужные издержки и находите
-              возможности повышать прибыльность бизнеса
-            </p>
-          </div>
           <div class="card_img">
             <img
               class="card_img-cover"
               src="../3-finio/images/grapf-images/expenses.png"
               alt="таблица с расходами"
             />
-            <img
-              class="card_img-over"
-              src="../3-finio/images/grapf-images/amounts.png"
-              alt="суммы расходов"
-            />
+            <div class="card_over">
+              <img
+                class="card_img-over"
+                src="../3-finio/images/grapf-images/amounts.png"
+                alt="суммы расходов"
+              />
+            </div>
+          </div>
+          <div class="card_block">
+            <h2 class="black-text-40-600">Сокращайте лишние<br />расходы</h2>
+            <p class="ghost-text-18">
+              Анализируйте расходы, убирать ненужные издержки и находите
+              возможности повышать прибыльность бизнеса
+            </p>
           </div>
         </div>
       </div>
@@ -207,25 +214,27 @@
         </div>
 
         <div class="account__image">
-          <img
-            class="account__image_devider"
-            src="../3-finio/images/account-images/account-devider.svg"
-            alt="разделитель изображений"
-          />
-          <img
-            class="account__image_cover"
-            src="../3-finio/images/account-images/report.png"
-            alt="отчет"
-          />
+          <div class="svg">
+            <img src="..//3-finio/images/account-images/svg-devider.svg" />
+          </div>
+          <div class="image_sliced">
+            <img
+              class="account__image_before"
+              src="../3-finio/images/account-images/report.png"
+              alt="отчет"
+            />
+          </div>
 
-          <img
-            class="account__image_overlay"
-            src="../3-finio/images/account-images/account.png"
-            alt="бухучет"
-          />
+          <div class="image_sliced_1">
+            <img
+              class="account__image_after"
+              src="../3-finio/images/account-images/account.png"
+              alt="бухучет"
+            />
+          </div>
         </div>
         <div class="account__comparison">
-          <div>
+          <div class="account__list">
             <div class="white-text-24-700">Excel</div>
             <div class="account__comparison_point">
               <img
@@ -263,7 +272,7 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="account__list">
             <div class="white-text-24-700">FINIO</div>
             <div class="account__comparison_point">
               <img
@@ -416,7 +425,7 @@
         </div>
       </div>
       <div class="tariffs__wrapper">
-        <div class="tariffs__wrapper_stat tariffs-card">
+        <div class="tariffs-card">
           <div>
             <div class="empty"></div>
             <div class="tariffs-card_top black-text-32-800">1 месяц</div>
@@ -432,7 +441,7 @@
             <div class="page__devider"></div>
             <div class="tariffs-card_body grey-text">
               <div>Ваша выгода</div>
-              <div>0 ₽</div>
+              <div class="empty-fill">0 ₽</div>
             </div>
             <div class="page__devider"></div>
             <div class="tariffs-card_body grey-text">
@@ -442,16 +451,16 @@
           </div>
           <div>
             <button class="button button-blue white-text-17-800">
-              Бесплатно 14 дней
+              Бесплатно&nbsp;14&nbsp;дней
             </button>
           </div>
         </div>
-        <div class="tariffs__wrapper_stat tariffs-card">
+        <div class="tariffs-card">
           <div>
             <div class="benefit-green-fill">
-              Выгода <span class="grow">25%</span>
+              Выгода&nbsp;<span class="grow">25%</span>
             </div>
-            <div class="tariffs-card_top black-text-top">6 месяцев</div>
+            <div class="tariffs-card_top black-text-32-800">6 месяцев</div>
             <div class="ghost-text-17">
               Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
             </div>
@@ -474,22 +483,22 @@
           </div>
           <div>
             <button class="button button-blue white-text-17-800">
-              Бесплатно 14 дней
+              Бесплатно&nbsp;14&nbsp;дней
             </button>
           </div>
         </div>
-        <div class="tariffs__wrapper_stat tariffs-card">
+        <div class="tariffs-card card-blue">
           <div>
             <div class="benefit-green-fill">
               Выгода&nbsp<span class="grow">50%</span>
             </div>
             <div class="tariffs-card_top white-text-32-800">12 месяцев</div>
             <div class="white-text-opas60">
-              Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет
-              сэкономить
+              Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт<br />и
+              хочет сэкономить
             </div>
           </div>
-          <div>
+          <div class="w">
             <div class="tariffs-card_body white-text-17-500-120">
               <div>Общая стоимость</div>
               <div class="pa">11 880 ₽</div>
@@ -507,7 +516,7 @@
           </div>
           <div>
             <button class="button button-white blue-text">
-              Бесплатно 14 дней
+              Бесплатно&nbsp;14&nbsp;дней
             </button>
           </div>
         </div>
@@ -531,10 +540,12 @@
               <p class="white-text-17-700">Дана Валеева</p>
               <p class="white-text-17-500">Продавец Wildberries</p>
             </div>
-            <img
-              class="feedback__indicator"
-              src="..//3-finio/images/feedback-images/indicator.svg"
-            />
+            <div class="feedback__indicator">
+              <img
+                class="feedback__indicator"
+                src="..//3-finio/images/feedback-images/indicator.svg"
+              />
+            </div>
           </div>
 
           <div class="feedback__block_img">
@@ -542,9 +553,11 @@
               src="..//3-finio/images/feedback-images/feedback-img.png"
               alt="фото"
             />
+          </div>
+          <div class="feedback__indicator_transform">
             <img
               class="feedback__indicator_transform"
-              src="..//3-finio/images/feedback-images/indicator-transform.svg"
+              src="..//3-finio/images/feedback-images/indicator.svg"
             />
           </div>
         </div>
