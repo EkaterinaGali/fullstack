@@ -9,8 +9,8 @@
 }
 
 .footer__menu {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
   margin-bottom: 40px;
   position: relative;
 }

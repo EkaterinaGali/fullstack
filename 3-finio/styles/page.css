@@ -49,6 +49,7 @@
 p {
   margin: 0;
 }
+
 .hero__footer_block {
   display: flex;
   gap: 16px;
@@ -142,7 +143,7 @@ p {
   justify-content: space-between;
   flex-direction: column;
   gap: 30px;
-  padding: 48px 40px;
+
   border-radius: var(--border-8);
   fill: var(--color-link-hover);
   box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
@@ -178,7 +179,7 @@ p {
 
 .tariffs__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 369px);
+  grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
   gap: 24px;
   margin-bottom: 80px;
 }
@@ -213,7 +214,7 @@ p {
 
 .account {
   text-align: center;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   margin-bottom: 40px;
 }
 
@@ -237,47 +238,58 @@ p {
 }
 
 .account__image {
-  /* display: flex; */
   margin: 0 auto 64px;
   max-width: var(--layout-width);
-  align-items: center;
-  justify-content: center;
+
   position: relative;
 }
 
-.account__image_before {
-  max-width: 100%;
+.account__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-blue);
+  width: 2px;
+  height: 100%;
+  z-index: 3;
 }
 
-.image_sliced {
-  width: 100%;
+.account__image::before {
+  content: url("..//images/account-images/svg-devider.svg");
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 104px;
+  height: 104px;
 }
 
-.image_sliced_1 {
+.account-image__image {
   width: 100%;
+  display: block;
+}
+
+.account-image__image_over {
+  display: block;
+
+  width: 200%;
+}
+
+.account-image__before {
+  z-index: 1;
+}
+
+.account-image__after {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.account__image_after {
-  max-width: 50%;
-}
-
-.image_sliced_after::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: red;
-}
-
-.svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  overflow: hidden;
 }
 
 .account__comparison {
@@ -309,7 +321,7 @@ p {
 .safety__point_item {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
+
   flex: 1;
 }
 
@@ -398,19 +410,23 @@ p {
 
 .feedback__indicator {
   position: absolute;
-  top: 99px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.indicator__left {
   left: 0;
 }
 
-.feedback__indicator_transform img {
-  position: absolute;
-  top: 213px;
-  left: 1054px;
+.indicator__right {
+  right: 0;
   transform: rotate(180deg);
+  top: 43%;
 }
 
-.feedback__indicator_transform img:hover,
-.feedback__indicator img:hover {
+.feedback__indicator:hover {
+  opacity: 1;
+  cursor: pointer;
   -webkit-filter: brightness(200%);
 }
 
@@ -497,9 +513,7 @@ p {
   .account__p {
     text-align: left;
   }
-  .account {
-    padding-top: 64px;
-  }
+
   .account__comparison {
     padding-bottom: 64px;
   }
