@@ -13,6 +13,10 @@ header {
   overflow: visible;
 }
 
+.header__login {
+  white-space: nowrap;
+}
+
 .header__logo {
   font-weight: 900;
   font-size: 36px;
@@ -61,18 +65,18 @@ header {
   color: var(--color-link-hover);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .header__logo {
     font-size: 24px;
+  }
+  .menu {
+    display: none;
   }
   .header__login {
     display: none;
   }
   .header__mobile-menu-button {
     display: block;
-  }
-  .menu {
-    display: none;
   }
 
   .header__wrapper {

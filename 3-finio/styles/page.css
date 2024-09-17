@@ -3,12 +3,12 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 0 24px;
 }
 
 .hero__left {
   display: flex;
   flex-direction: column;
+  min-width: 452px;
 }
 
 .hero__h1 {
@@ -138,7 +138,7 @@ p {
 }
 
 .tariffs-card {
-  padding: 0 24px;
+  padding: 48px 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -204,7 +204,7 @@ p {
 .account__wrapper {
   background: var(--color-blue);
   margin: auto;
-  padding: 0 24px;
+  padding: 80px 24px;
 }
 
 .account__wrapper_width {
@@ -297,7 +297,7 @@ p {
   gap: 24px;
   padding: 0 24px;
   justify-content: center;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 
 .account__comparison_point {
@@ -309,13 +309,25 @@ p {
 .safety__wrapper {
   max-width: var(--layout-width);
   margin: auto;
+  padding: 0 24px;
 }
 
 .safety__point {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 78px;
-  padding: 0 24px;
-  margin: 120px 0 162px;
+  /* padding: 0 24px; */
+  padding: 120px 0 80px;
+}
+
+.mobile__wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-opas-8);
 }
 
 .safety__point_item {
@@ -332,7 +344,9 @@ p {
 
 .mobile__wrapper {
   max-width: var(--layout-width);
-  margin: 0 auto 120px;
+  margin: auto;
+  position: relative;
+  padding: 80px 0 120px;
 }
 
 .mobile__img {
@@ -366,7 +380,7 @@ p {
   display: flex;
   gap: 40px;
   flex-direction: column;
-  padding: 40px;
+  padding: 64px 24px;
 }
 
 .support__block {
@@ -449,16 +463,21 @@ p {
     flex-direction: column;
   }
   .safety__point {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 64px 0 48px;
   }
   .mobile__img {
     overflow-x: hidden;
   }
   .support__contact {
+    gap: 32px;
     flex-direction: column-reverse;
   }
   .tariffs__wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .tariffs-card {
+    padding: 48px 24px;
   }
   .feedback__block {
     flex-direction: column-reverse;
@@ -479,6 +498,9 @@ p {
   .feedback__points {
     display: block;
     text-align: center;
+  }
+  .hero__left {
+    min-width: 0;
   }
   .hero__right {
     display: none;
@@ -507,6 +529,7 @@ p {
   .headling__bottom {
     text-align: left;
   }
+
   .account__h2 {
     text-align: left;
   }
@@ -517,7 +540,10 @@ p {
   .account__comparison {
     padding-bottom: 64px;
   }
+  .account__wrapper {
+    padding: 24px 24px;
+  }
   .mobile__wrapper {
-    margin-bottom: 64px;
+    padding: 48px 0 64px;
   }
 }

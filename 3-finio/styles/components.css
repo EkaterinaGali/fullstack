@@ -91,6 +91,7 @@
 }
 
 .white-text-40-600 {
+  margin: 0;
   font-weight: 600;
   font-size: 40px;
   line-height: 120%;
